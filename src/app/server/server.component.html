@@ -1,0 +1,2 @@
+<!-- <div [ngStyle]="{backgroundColor: getColor()}">{{'Server'}} with ID {{ serverId }} is {{ getServerStatus() }}</div> -->
+<div class="alert" [ngClass]="{'alert-success': serverStatus === 'online', 'alert-danger': serverStatus === 'offline'}">{{'Server'}} with ID {{ serverId }} is {{ getServerStatus() }}</div>
